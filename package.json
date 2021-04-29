@@ -1,0 +1,61 @@
+{
+  "name": "demo-zzlu",
+  "version": "1.0.8",
+  "author": "zzlu <347439802@qq.com>",
+  "main": "lib/demo-zzlu.umd.min.js",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode dev",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib-test": "vue-cli-service build --mode test --target lib --name demo-zzlu --dest lib packages/index.js",
+    "lib-prod": "vue-cli-service build --mode prod --target lib --name demo-zzlu --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.1",
+    "js-md5": "^0.7.3",
+    "vue": "^2.6.11",
+    "vuedraggable": "^2.24.3",
+    "wangeditor": "^4.6.15"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^5.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-console": "off"
+    }
+  },
+  "sideEffects": [
+    "*.css",
+    "*.vue"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
