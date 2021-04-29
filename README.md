@@ -24,13 +24,13 @@ npm install -S demo-zzlu
 
 ### 2、在main.js中添加，全局注册
 ```
-import byVote from 'demo-zzlu';
+import demoZzlu from 'demo-zzlu';
 import 'demo-zzlu/lib/demo-zzlu.css';
 
-Vue.use(byVote);
+Vue.use(demoZzlu);
 ```
 
 ### 3、在组建中引用
 ```
-<demo-zzlu />
+<demo />
 ```
